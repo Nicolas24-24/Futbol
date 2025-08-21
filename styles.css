@@ -1,0 +1,131 @@
+/* --- Estilos Generales --- */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 40px 0;
+}
+
+/* --- Encabezado --- */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 20px;
+}
+
+h1 {
+    color: #0056b3;
+    font-size: 2.2em;
+    margin: 0;
+}
+
+/* --- Títulos de Secciones --- */
+h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #007bff;
+    font-size: 1.5em;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    color: #0056b3;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    border-left: 4px solid #007bff;
+    padding-left: 10px;
+}
+
+/* --- Contenido y Listas --- */
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    background-color: #f8f9fa;
+    border-left: 4px solid #17a2b8;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+strong {
+    color: #d9534f; /* Un color rojo suave para destacar problemas */
+}
+
+/* --- Estructura en Columnas --- */
+.columns {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* --- Sección del Reglamento --- */
+#reglamento .objetivo {
+    background-color: #eef7ff;
+    border: 1px solid #bce8f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#reglamento article {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+#reglamento article:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#reglamento article p {
+    margin-bottom: 8px;
+}
+
+/* --- Pie de Página --- */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+    color: #777;
+    font-size: 0.9em;
+}
