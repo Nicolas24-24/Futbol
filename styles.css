@@ -1,68 +1,78 @@
+/* --- Paleta de Colores Llamativa --- */
+/* Naranja Vibrante: #FF6700 */
+/* Azul Profundo: #0A2463 */
+/* Fucsia de Alerta: #D90368 */
+/* Gris Oscuro (Texto): #2E2E2E */
+/* Fondos Claros: #F9F9F9, #FFFFFF */
+
 /* --- Estilos Generales --- */
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+    line-height: 1.7;
     margin: 0;
     padding: 0;
-    background-color: #f0f2f5;
-    color: #333;
+    background-color: #f9f9f9;
+    color: #2E2E2E; /* Texto principal más oscuro */
 }
 
 .container {
     max-width: 900px;
     margin: 30px auto;
-    padding: 25px;
+    padding: 30px;
     background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    border-top: 5px solid #FF6700; /* Borde superior naranja */
 }
 
 hr {
     border: 0;
     height: 1px;
-    background-color: #e0e0e0;
-    margin: 40px 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+    margin: 45px 0;
 }
 
 /* --- Encabezado --- */
 header {
     text-align: center;
     margin-bottom: 30px;
-    border-bottom: 3px solid #007bff;
     padding-bottom: 20px;
 }
 
 h1 {
-    color: #0056b3;
-    font-size: 2.2em;
+    color: #0A2463; /* Azul profundo para el título principal */
+    font-size: 2.4em;
+    font-weight: 700;
     margin: 0;
 }
 
 /* --- Títulos de Secciones --- */
 h2 {
-    color: #333;
-    font-size: 1.8em;
+    color: #2E2E2E;
+    font-size: 2em;
     margin-bottom: 20px;
+    border-bottom: 2px solid #EEEEEE;
+    padding-bottom: 10px;
 }
 
 h3 {
-    color: #007bff;
-    font-size: 1.5em;
+    color: #FF6700; /* Naranja para subtítulos */
+    font-size: 1.6em;
     margin-top: 25px;
     margin-bottom: 15px;
 }
 
 h4 {
-    color: #0056b3;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    border-left: 4px solid #007bff;
-    padding-left: 10px;
+    color: #0A2463; /* Azul profundo para títulos de artículos */
+    font-size: 1.3em;
+    margin-bottom: 15px;
+    font-weight: 700;
 }
 
 /* --- Contenido y Listas --- */
 p {
     margin-bottom: 15px;
+    font-size: 1.05em;
 }
 
 ul {
@@ -72,14 +82,16 @@ ul {
 
 ul li {
     background-color: #f8f9fa;
-    border-left: 4px solid #17a2b8;
-    padding: 12px 15px;
-    margin-bottom: 10px;
-    border-radius: 4px;
+    border-left: 5px solid #FF6700; /* Borde naranja */
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    font-size: 1.05em;
 }
 
 strong {
-    color: #d9534f; /* Un color rojo suave para destacar problemas */
+    color: #D90368; /* Fucsia para destacar problemas */
+    font-weight: 700;
 }
 
 /* --- Estructura en Columnas --- */
@@ -96,29 +108,36 @@ strong {
 
 /* --- Sección del Reglamento --- */
 #reglamento .objetivo {
-    background-color: #eef7ff;
-    border: 1px solid #bce8f1;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    background-color: #FFF2E5; /* Fondo naranja muy claro */
+    border: 1px solid #FFD8B8;
+    color: #613500;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 25px 0;
 }
 
 #reglamento article {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: #FFFFFF;
+    border: 1px solid #ECECEC;
     border-radius: 8px;
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 20px;
-    transition: box-shadow 0.3s ease;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 #reglamento article:hover {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px); /* Efecto al pasar el cursor */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.07);
 }
 
 #reglamento article p {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
+
+#reglamento article p strong {
+    color: #0A2463; /* Azul profundo para los números de los artículos */
+}
+
 
 /* --- Pie de Página --- */
 footer {
@@ -126,6 +145,6 @@ footer {
     margin-top: 40px;
     padding-top: 20px;
     border-top: 1px solid #e0e0e0;
-    color: #777;
+    color: #888;
     font-size: 0.9em;
 }
